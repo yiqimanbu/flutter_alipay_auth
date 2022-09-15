@@ -1,4 +1,4 @@
->QQ：1552755354
+>contact us QQ:1552755354
 
 # What's alipay_auth
 alipay_auth is a flutter plugin for AliPayAuth.
@@ -34,21 +34,28 @@ var result = await isAliPayInstalled();
 ```
 
 If you want to check alipay installation of Alipay on iOS,make sure you have added alipays into your whitelist in info.plist.
+```
+<key>LSApplicationQueriesSchemes</key>
+<array>
+    <string>alipay</string>
+    <string>alipays</string>
+</array>
+```
 For iOS,yout have to add url schema named alipay. On Xcode GUI: url_schema
 in your info.plist:
 
 ```
 <array>
-   		<dict>
-   			<key>CFBundleTypeRole</key>
-   			<string>Editor</string>
-   			<key>CFBundleURLName</key>
-   			<string>alipay</string>
-   			<key>CFBundleURLSchemes</key>
-   			<array>
-   				<string>alipay_auth_example</string>
-   			</array>
-   		</dict>
+    <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>alipay</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>alipay_auth_example</string>
+        </array>
+    </dict>
 </array>
 ```
 

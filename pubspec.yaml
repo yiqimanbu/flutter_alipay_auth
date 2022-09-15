@@ -1,7 +1,7 @@
 name: alipay_auth
-description: A new Flutter project.
+description: A Flutter plugin for allowing users to authenticate with native Android&iOS AliPay SDKs..
 version: 1.0.1
-homepage: https://github.com/cwdsgi/alipay_auth.git
+homepage: https://github.com/yiqimanbu/flutter_alipay_auth.git
 
 environment:
   sdk: ">=2.16.1 <3.0.0"

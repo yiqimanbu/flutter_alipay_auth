@@ -57,9 +57,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: TextButton(
             onPressed: () async {
-              Map map = await AlipayAuthPlugin.aliPayAuth(
-                'https://authweb.alipay.com/auth?auth_type=PURE_OAUTH_SDK&app_id=your AppId&scope=auth_user&state=init',
-              );
+              Map map = await AlipayAuthPlugin.aliPayAuth('auth');
               debugPrint('aliPayAuth info:$map');
               String appId = map['app_id'];
               debugPrint('aliPayAuth appId:$appId');
