@@ -4,13 +4,11 @@
 alipay_auth is a flutter plugin for AliPayAuth.
 
 # Getting Started
-***
 
 I highly recommend that you - [read the official documents](https://opendocs.alipay.com/open/218/sxc60m) before using alipay_auth.
 alipay_auth helps you to do something but not all. For example, you have to configure your URL Scheme on iOS.
 
 # AliPayAuth
-***
 ```
 await AlipayAuthPlugin.aliPayAuth('your auth str');
 ```
@@ -30,7 +28,6 @@ platform: android
 ```
 
 # Check AliPay Installation
-***
 
 ```
 var result = await isAliPayInstalled();
