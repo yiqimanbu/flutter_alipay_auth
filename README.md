@@ -1,3 +1,4 @@
+[中文移步这里](https://github.com/yiqimanbu/flutter_alipay_auth/blob/main/README_CN.md)
 >contact us QQ:1552755354
 
 # What's alipay_auth

@@ -71,7 +71,7 @@ class _MyAppState extends State<MyApp> {
               debugPrint('aliPayAuth platform:$platform');
             },
             child: const Text(
-              '支付授权',
+              '支付宝授权',
             ),
           ),
         ),
