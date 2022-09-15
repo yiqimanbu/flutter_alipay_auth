@@ -1,7 +1,6 @@
 >QQ：1552755354
 
 # What's alipay_auth
-***
 alipay_auth is a flutter plugin for AliPayAuth.
 
 # Getting Started
