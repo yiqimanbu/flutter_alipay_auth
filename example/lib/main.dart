@@ -16,20 +16,18 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
-  final _alipayAuthPlugin = AlipayAuthPlugin();
-
   @override
   void initState() {
     super.initState();
     initPlatformState();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
+  /// Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
+
+    /// Platform messages may fail, so we use a try/catch PlatformException.
+    /// We also handle the message potentially returning null.
     try {
       platformVersion =
           await AlipayAuthPlugin.platformVersion ?? 'Unknown platform version';
@@ -37,9 +35,9 @@ class _MyAppState extends State<MyApp> {
       platformVersion = 'Failed to get platform version.';
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
+    /// If the widget was removed from the tree while the asynchronous platform
+    /// message was in flight, we want to discard the reply rather than calling
+    /// setState to update our non-existent appearance.
     if (!mounted) return;
 
     setState(() {
@@ -57,7 +55,10 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: TextButton(
             onPressed: () async {
+              ///start auth
               Map map = await AlipayAuthPlugin.aliPayAuth('auth');
+
+              ///print aliPayAuth info
               debugPrint('aliPayAuth info:$map');
               String appId = map['app_id'];
               debugPrint('aliPayAuth appId:$appId');
