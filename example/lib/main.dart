@@ -72,6 +72,9 @@ class _MyAppState extends State<MyApp> {
             },
             child: const Text(
               '支付宝授权',
+              style: TextStyle(
+                fontSize: 16,
+              ),
             ),
           ),
         ),
